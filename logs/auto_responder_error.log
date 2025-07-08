@@ -36,3 +36,11 @@ INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:53] "[36mGET /static/style.css H
 INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:55] "GET /api/chat/15874291448 HTTP/1.1" 200 -
 INFO:agents.lead_collector:Loaded 1 leads
 INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:51:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 09:10:47] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 09:10:47] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+INFO:agents.lead_collector:Loaded 1 leads
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 09:10:48] "GET / HTTP/1.1" 200 -
+INFO:agents.lead_collector:Loaded 1 leads
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 09:10:48] "GET / HTTP/1.1" 200 -
+INFO:agents.lead_collector:Loaded 1 leads
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 09:10:49] "GET / HTTP/1.1" 200 -
