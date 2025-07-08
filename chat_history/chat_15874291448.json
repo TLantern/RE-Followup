@@ -82,5 +82,59 @@
     "direction": "outgoing",
     "message": "Hi James Lucky, just checking in about the Downtown Condo . Let me know if you have any questions!",
     "message_id": "130651751984063329"
+  },
+  {
+    "timestamp": "2025-07-08T08:27:49.409539",
+    "direction": "outgoing",
+    "message": "This is a test message from your RE-Followup bot. Reply to test the webhook!",
+    "message_id": "131381751984868477"
+  },
+  {
+    "timestamp": "2025-07-08T08:27:59.063491",
+    "direction": "incoming",
+    "message": "I am very interested!",
+    "message_id": "test123"
+  },
+  {
+    "timestamp": "2025-07-08T08:28:00.953240",
+    "direction": "outgoing",
+    "message": "Hi James Lucky, just checking in about the Downtown Condo . Let me know if you have any questions!",
+    "message_id": "131401751984880035"
+  },
+  {
+    "timestamp": "2025-07-08T08:28:07.904619",
+    "direction": "incoming",
+    "message": "Hi! I'm interested in the Downtown Condo. Can you tell me more?",
+    "message_id": "test_auto_response_123"
+  },
+  {
+    "timestamp": "2025-07-08T08:28:09.668795",
+    "direction": "outgoing",
+    "message": "Hi James Lucky, just checking in about the Downtown Condo . Let me know if you have any questions!",
+    "message_id": "131421751984888698"
+  },
+  {
+    "timestamp": "2025-07-08T08:40:30.723110",
+    "direction": "incoming",
+    "message": "Testing background service - please respond!",
+    "message_id": "bg_service_test_123"
+  },
+  {
+    "timestamp": "2025-07-08T08:40:32.229326",
+    "direction": "outgoing",
+    "message": "Hi James Lucky, just checking in about the Downtown Condo . Let me know if you have any questions!",
+    "message_id": "132141751985631221"
+  },
+  {
+    "timestamp": "2025-07-08T08:48:41.128459",
+    "direction": "incoming",
+    "message": "Testing background service - please respond!",
+    "message_id": "bg_service_test_123"
+  },
+  {
+    "timestamp": "2025-07-08T08:48:42.985182",
+    "direction": "outgoing",
+    "message": "Hi James Lucky, just checking in about the Downtown Condo . Let me know if you have any questions!",
+    "message_id": "132361751986121719"
   }
 ]

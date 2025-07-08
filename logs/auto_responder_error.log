@@ -1,0 +1,38 @@
+INFO:__main__:TEXTBELT_API_KEY: SET
+INFO:__main__:TEXTBELT_WEBHOOK_URL: https://re-autorespond-b6346f1a90ea.herokuapp.com/sms
+INFO:__main__:Starting SMS responder on port 5000
+INFO:__main__:App will only respond to incoming SMS messages
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.67:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:agents.lead_collector:Loaded 1 leads
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:32] "GET /api/chat/15874291448 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:37] "GET /webhook/health HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:39] "GET /webhook/health HTTP/1.1" 200 -
+INFO:agents.reply_listener:\U0001f514 SMS webhook called
+WARNING:agents.reply_listener:No signature provided in webhook - allowing for testing
+INFO:agents.reply_listener:\u2705 Signature validation passed
+INFO:agents.reply_listener:\U0001f4f1 Textbelt webhook - MessageID: bg_service_test_123, From: +15874291448
+INFO:agents.reply_listener:\U0001f4ac SMS Reply from +15874291448: Testing background service - please respond!
+INFO:agents.chat_storage:Saved incoming message for +15874291448
+INFO:agents.agent_notifier:[\U0001f525 HOT LEAD] +15874291448 replied: Testing background service - please respond!
+INFO:agents.reply_listener:\U0001f916 Generating automatic response...
+INFO:agents.lead_collector:Loaded 1 leads
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+ERROR:agents.message_writer:OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************EEcA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+INFO:agents.message_writer:Using fallback message: Hi James Lucky, just checking in about the Downtown Condo . Let me know if you have any questions!
+INFO:agents.reply_listener:\U0001f4e4 Sending auto-response: Hi James Lucky, just checking in about the Downtow...
+INFO:agents.message_sender:SMS\u2192+15874291448, TextID:132361751986121719, Quota:171
+INFO:agents.chat_storage:Saved outgoing message for +15874291448
+INFO:agents.reply_listener:\u2705 Auto-response sent successfully! ID: 132361751986121719
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:42] "POST /sms HTTP/1.1" 200 -
+INFO:agents.lead_collector:Loaded 1 leads
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:48:55] "GET /api/chat/15874291448 HTTP/1.1" 200 -
+INFO:agents.lead_collector:Loaded 1 leads
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2025 08:51:21] "GET / HTTP/1.1" 200 -
