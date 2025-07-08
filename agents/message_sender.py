@@ -2,6 +2,8 @@
 Send SMS via Textbelt.
 """
 import os, logging, requests
+from .chat_storage import save_message
+
 logger = logging.getLogger(__name__)
 
 TEXTBELT_API_URL = "https://textbelt.com/text"
@@ -42,6 +44,10 @@ def send_sms(to, body):
             message_id = response_data.get('textId', 'unknown')
             quota_remaining = response_data.get('quotaRemaining', 'unknown')
             logger.info(f"SMS→{to}, TextID:{message_id}, Quota:{quota_remaining}")
+            
+            # Save outgoing message to chat history
+            save_message(to, body, 'outgoing', message_id)
+            
             return message_id
         else:
             error_message = response_data.get('error', 'Unknown error')
