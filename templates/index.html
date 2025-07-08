@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Cursor Closer Bot</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <header><h1>Cursor Closer Bot</h1></header>
+  <section id="video">
+    {% if demo_video %}
+      <iframe width="560" height="315" src="{{ demo_video }}" frameborder="0" allowfullscreen></iframe>
+    {% else %}
+      <p><em>Set DEMO_VIDEO_URL to your embed link.</em></p>
+    {% endif %}
+  </section>
+  <section id="leads"><h2>Leads Status</h2>
+    <table><thead><tr><th>Name</th><th>Phone</th><th>Interest</th><th>Status</th></tr></thead><tbody>
+    {% for lead in leads %}
+      <tr><td>{{lead.name}}</td><td>{{lead.phone}}</td><td>{{lead.interest}}</td><td>{{lead.status}}</td></tr>
+    {% endfor %}
+    </tbody></table>
+  </section>
+</body>
+</html>
