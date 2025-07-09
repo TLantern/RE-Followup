@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2025-07-08T18:33:30.348221",
+    "direction": "incoming",
+    "message": "Hi, I'm interested in beachfront properties. What do you have available?",
+    "message_id": "test_msg_1"
+  },
+  {
+    "timestamp": "2025-07-08T18:33:30.348985",
+    "direction": "incoming",
+    "message": "What's the price range for properties near the beach?",
+    "message_id": "test_msg_2"
+  },
+  {
+    "timestamp": "2025-07-08T18:33:30.349339",
+    "direction": "incoming",
+    "message": "Do any of them have ocean views?",
+    "message_id": "test_msg_3"
+  },
+  {
+    "timestamp": "2025-07-08T18:33:30.349598",
+    "direction": "incoming",
+    "message": "I'm looking for something with at least 3 bedrooms.",
+    "message_id": "test_msg_4"
+  },
+  {
+    "timestamp": "2025-07-08T18:33:30.349832",
+    "direction": "incoming",
+    "message": "When can we schedule a viewing?",
+    "message_id": "test_msg_5"
+  },
+  {
+    "timestamp": "2025-07-08T18:34:50.857180",
+    "direction": "incoming",
+    "message": "Hi, I'm interested in beachfront properties. What do you have available?",
+    "message_id": "test_msg_1"
+  },
+  {
+    "timestamp": "2025-07-08T18:34:50.857659",
+    "direction": "incoming",
+    "message": "What's the price range for properties near the beach?",
+    "message_id": "test_msg_2"
+  },
+  {
+    "timestamp": "2025-07-08T18:34:50.858135",
+    "direction": "incoming",
+    "message": "Do any of them have ocean views?",
+    "message_id": "test_msg_3"
+  },
+  {
+    "timestamp": "2025-07-08T18:34:50.858548",
+    "direction": "incoming",
+    "message": "I'm looking for something with at least 3 bedrooms.",
+    "message_id": "test_msg_4"
+  },
+  {
+    "timestamp": "2025-07-08T18:34:50.858864",
+    "direction": "incoming",
+    "message": "When can we schedule a viewing?",
+    "message_id": "test_msg_5"
+  }
+]
