@@ -66,8 +66,8 @@ def generate_auto_response(from_number, incoming_message):
         # Use the incoming message context to generate a relevant response
         tone_sample = os.getenv('AGENT_TONE_SAMPLE', "Thanks for reaching out! Let me help you with that.")
         
-        # Generate contextual response
-        response = generate_followup(lead, f"{tone_sample} Responding to: {incoming_message}")
+        # Generate contextual response based on chat history
+        response = generate_followup(lead, tone_sample)
         return response
         
     except Exception as e:

@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-07-08T18:19:42.878000",
+    "direction": "incoming",
+    "message": "Hi, I am interested in the property you mentioned. Can you tell me more about it?",
+    "message_id": "test123"
+  },
+  {
+    "timestamp": "2025-07-08T18:20:10.831072",
+    "direction": "incoming",
+    "message": "What are the square footage and number of bedrooms?",
+    "message_id": "test456"
+  },
+  {
+    "timestamp": "2025-07-08T18:20:32.604963",
+    "direction": "incoming",
+    "message": "What are the square footage and number of bedrooms?",
+    "message_id": "test456"
+  },
+  {
+    "timestamp": "2025-07-08T18:21:33.916158",
+    "direction": "incoming",
+    "message": "Do you have any properties with a pool?",
+    "message_id": "test789"
+  },
+  {
+    "timestamp": "2025-07-08T18:22:05.589459",
+    "direction": "incoming",
+    "message": "Is there a garage?",
+    "message_id": "test101"
+  },
+  {
+    "timestamp": "2025-07-08T18:22:05.802435",
+    "direction": "outgoing",
+    "message": "Hi Potential Client, just checking in about the Real Estate Inquiry. Let me know if you have any questions!",
+    "message_id": "test_4192"
+  },
+  {
+    "timestamp": "2025-07-08T18:22:26.171258",
+    "direction": "incoming",
+    "message": "How much is the monthly rent?",
+    "message_id": "test102"
+  },
+  {
+    "timestamp": "2025-07-08T18:22:26.328127",
+    "direction": "outgoing",
+    "message": "Hi Potential Client, just checking in about the Real Estate Inquiry. Let me know if you have any questions!",
+    "message_id": "test_4192"
+  }
+]

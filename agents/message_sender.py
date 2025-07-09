@@ -13,12 +13,23 @@ def send_sms(to, body):
         # Get API key and webhook URL at runtime (after .env is loaded)
         api_key = os.getenv('TEXTBELT_API_KEY')
         webhook_url = os.getenv('TEXTBELT_WEBHOOK_URL')
+        test_mode = os.getenv('TEST_MODE', 'false').lower() == 'true'
         
-        if not api_key:
+        if not api_key and not test_mode:
             logger.error("TEXTBELT_API_KEY not found in environment variables")
             return None
         
         logger.debug(f"Using API key: {'SET' if api_key else 'NOT SET'}")
+        
+        # Test mode - don't actually send SMS
+        if test_mode:
+            logger.info(f"TEST MODE: Would send to {to}: {body}")
+            test_message_id = f"test_{hash(body) % 10000}"
+            
+            # Save outgoing message to chat history
+            save_message(to, body, 'outgoing', test_message_id)
+            
+            return test_message_id
         
         # Prepare the payload for Textbelt API
         payload = {
