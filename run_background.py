@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 Run the SMS auto-responder in the background on Windows.
 """
@@ -43,7 +45,7 @@ def run_in_background():
         
         print(f"✅ SMS Auto-Responder started successfully!")
         print(f"🔢 Process ID: {process.pid}")
-        print(f"🌐 Server should be running on http://localhost:5000")
+        print(f"🌐 Server should be running on http://localhost:8080")
         print(f"🔍 Monitor logs with: tail -f {log_file}")
         print(f"❌ Check errors with: tail -f {error_file}")
         print("\n📝 To stop the service, run: python stop_background.py")
